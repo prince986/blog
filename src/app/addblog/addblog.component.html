@@ -1,0 +1,25 @@
+<form  action="/action_page.php">
+  <div class="form-group">
+    <label ><h3>Title:</h3></label>
+    <input type="text" class="form-control" [ngModel]="blogTitle" #title placeholder="Enter Title" name="title">
+  </div>
+  <div class="form-group">
+    <label><h3>Description:</h3></label>
+    <textarea placeholder="Enter Description here:-" [(ngModel)]="blogDescription" name="description" class="form-control" rows="7" #description>
+    </textarea>
+  </div>
+  <div class="form-group">
+    <label><h3>Category:</h3></label>
+    <select [(ngModel)]="blogCategory" style="width: 75%;height: 30px" #category name="category">
+      <option value="1">Tech</option>
+      <option value="2">Management</option>
+      <option value="3">Medical</option>
+      <option value="4">Cultural</option>
+      <option value="5">Social</option>
+    </select>
+  </div>
+  <button *ngIf="!blogId ; else update" type="submit" class="btn btn-success" (click)="addBlog(title.value,description.value,category.value)">AddBlog</button>
+  <ng-template #update>
+  <button type="submit" class="btn btn-success" (click)="updateBlog(blogId,title.value,description.value,category.value)">Update</button>
+  </ng-template>
+</form>

@@ -1,0 +1,18 @@
+<div class="modal" id="myModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Login</h4>
+      </div>
+      <div class="modal-body">
+        <input type="text" #username placeholder="Username">
+        <input type="password" #password placeholder="password">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success"  (click)="loginUser(username.value,password.value)">Login</button>
+      </div>
+    </div>
+  </div>
+</div>

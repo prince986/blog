@@ -1,0 +1,7 @@
+.blog{
+  height: 90vh;
+  overflow-y:scroll;
+}
+.addblog{
+  height:70vh;
+}

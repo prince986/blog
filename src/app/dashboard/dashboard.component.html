@@ -1,0 +1,17 @@
+<div >
+<app-nav-bar></app-nav-bar>
+</div>
+<div class="row">
+  <div class="col-sm-6 blog" >
+  <app-blog (sendblog)="getblog($event)"></app-blog>
+</div>
+  <div class="col-sm-6 addblog">
+    <app-addblog
+                 [blogId]='id'
+                 [blogTitle]='title'
+                 [blogDescription]='description'
+                 [blogCategory]='category'>
+
+    </app-addblog>
+  </div>
+  </div>
