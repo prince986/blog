@@ -34,14 +34,6 @@
   ],
   "blogs": [
     {
-      "title": "Comablog2",
-      "description": "In this person feels everything but cannot respond anything,it is ",
-      "authorId": "2",
-      "categoryId": "3",
-      "date": "Fri Nov 17 2017 09:39:45 GMT+0530 (India Standard Time)",
-      "id": 2
-    },
-    {
       "title": "FacebookApp",
       "description": "App to connect people and share their activities",
       "authorId": "3",
@@ -51,18 +43,18 @@
     },
     {
       "title": "Business",
-      "description": " business (also known as an enterprise, a company, or a firm) is an organizational entity and legal entity made up of an association of people, be they natural, legal, or a mixture of both who share a common purpose and unite in order to focus their various talents and organize their collectively available skills or resources to achieve specific declared goals and are involved in the provision of goods and services to consumers.",
-      "authorId": "2",
+      "description": "business is the key to success",
+      "authorId": "1",
       "categoryId": "2",
-      "date": "25 August 2017",
+      "date": "Sun Nov 19 2017 10:53:54 GMT+0530 (India Standard Time)",
       "id": 4
     },
     {
-      "title": "First_Cultural1",
-      "description": "this is my first cultural blog, i hope you will like it.you should like this blog if you really like it.",
-      "authorId": "2",
+      "title": "Static value",
+      "description": "Static value is belonged to a class not objects.\nIt is used to save memory.",
+      "authorId": "1",
       "categoryId": "4",
-      "date": "Fri Nov 17 2017 09:54:21 GMT+0530 (India Standard Time)",
+      "date": "Sun Nov 19 2017 10:50:24 GMT+0530 (India Standard Time)",
       "id": 5
     },
     {
@@ -74,11 +66,11 @@
       "id": 9
     },
     {
-      "title": "myblog1",
-      "description": "this is good you will like it.",
+      "title": "business blog",
+      "description": "gives info about business.",
       "authorId": "1",
       "categoryId": "2",
-      "date": "Fri Nov 17 2017 09:56:40 GMT+0530 (India Standard Time)",
+      "date": "Sun Nov 19 2017 10:54:29 GMT+0530 (India Standard Time)",
       "id": 10
     },
     {
@@ -90,11 +82,11 @@
       "id": 11
     },
     {
-      "title": "manage",
-      "description": "this is manage block",
+      "title": "my First blog",
+      "description": "hello this is very good blog",
       "authorId": "1",
       "categoryId": "2",
-      "date": "Fri Nov 17 2017 12:24:10 GMT+0530 (India Standard Time)",
+      "date": "Sun Nov 19 2017 10:40:25 GMT+0530 (India Standard Time)",
       "id": 12
     }
   ],

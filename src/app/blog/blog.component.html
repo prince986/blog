@@ -1,6 +1,6 @@
 <div  *ngFor="let blog of blogs" >
-  <div *ngIf="isShouldPrint(blog.categoryId,blog.id)" class="card" style="background-color: #ECE9E9">
-    <div class="card-header" style="margin: 8px" >
+  <div *ngIf="isShouldPrint(blog.categoryId)" class="card" style="background-color: #ECE9E9">
+    <div class="card-header"  >
       <h2>{{blog.title}}</h2>
     </div>
     <div class="card-block">
@@ -8,18 +8,14 @@
         <p>{{blog.description}}</p>
         <footer>Published on:-<cite title="Source Title">{{blog.date | date}}</cite>
 
-          <button *ngIf="isloggedin()=='true' && checkaccess(blog.authorId)" (click)="UpdateBlog(blog.id,blog.title,blog.description,blog.categoryId)" type="button" class="btn btn-primary	 btn-sm">
-            <span class="glyphicon glyphicon-pencil"></span>
+          <button (click)="UpdateBlog(blog.id,blog.title,blog.description,blog.categoryId)" type="button" class="btn btn-primary	 btn-sm">
+            Update
           </button>
-          <button *ngIf="isloggedin()=='true' && checkaccess(blog.authorId)" (click)="DeleteBlog(blog.id)" type="button" class="btn btn-danger btn-sm">
-            <span class="glyphicon glyphicon-trash"></span>
+          <button (click)="DeleteBlog(blog.id)" type="button" class="btn btn-danger btn-sm">
+            Delete
           </button>
-          <button *ngIf="isloggedin()=='true' && checkfavourite(blog.id);else tempempty" (click)="emptystar(blog.id)"  type="button" class="btn btn-warning btn-sm">
-            <span class="star glyphicon glyphicon-star"></span></button>
-          <ng-template #tempempty>
-            <button *ngIf="isloggedin()=='true'" (click)="fullstar(blog.id)" type="button" class="btn btn-warning btn-sm">
-              <span class="star glyphicon glyphicon-star-empty"></span></button>
-          </ng-template>
+          <button type="button" class="btn btn-warning ">
+            Like</button>
         </footer>
       </blockquote>
     </div>

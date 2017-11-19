@@ -1,1 +1,8 @@
 
+.card-header{
+  margin: 8px;
+  background-color:darkgray;
+}
+.likebutton{
+  background-color: greenyellow;
+}
